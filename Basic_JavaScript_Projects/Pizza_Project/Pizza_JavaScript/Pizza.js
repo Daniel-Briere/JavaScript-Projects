@@ -28,11 +28,11 @@ function getReceipt() {
     console.log("subtotal: $"+runningTotal+".00");
     //These variables will get passed on to each function
     getTopping(runningTotal,text1);
-};
+}
 
 function getTopping(runningTotal,text1) {
     var toppingTotal = 0;
-    var selectedTotal = [];
+    var selectedTopping = [];
     var toppingArray = document.getElementsByClassName("toppings");
     for (var j = 0; j < toppingArray.length; j++) {
         if (toppingArray[j].checked) {
@@ -55,4 +55,4 @@ function getTopping(runningTotal,text1) {
     document.getElementById("showText").innerHTML=text1;
     document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>$"+
         runningTotal+".00"+"</strong></h3>";
-};
+}
