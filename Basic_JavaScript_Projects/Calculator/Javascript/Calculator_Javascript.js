@@ -118,4 +118,4 @@ keys.addEventListener('Click', (event) => {
     }
     Input_Digit(target.value);
     Updates_Display();
-})
+});
